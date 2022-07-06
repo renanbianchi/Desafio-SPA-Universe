@@ -7,26 +7,21 @@
 :root {
   font-size: 62.5%;
   --font-family: 'Roboto', sans-serif;
-  --url: url("bg/mountains-universe-1.png");
+  --bg: url("bg/home.png");
+  --font-size: 2.16rem;
 }
 
 header {
   height: 12.2rem;
   margin: 4rem 71.9rem 4rem 7.2rem;
-  font-size: 2.4rem;
+  font-size: var(--font-size);
 }
-
-bg2 {
-  background-image: url("bg/mountains-universe-3.png");
-}
-
-  
 
 body{
   color: white;
   display: flex;
   flex-direction: column;
-  background: var(--url);
+  background: var(--bg);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: var(--font-family);
@@ -43,41 +38,13 @@ body{
   height: 80vh;
 }
 
-nav {
-  display:flex;
-  align-items: center;
-  flex-direction: row;
-  justify-self: left;
-  height: 7.2rem;
-  gap: 3.2rem;
-}
-
-a {
-text-decoration: none;
-color: #FFFFFF;
-}
-
-h1 {
-font-size: 4.8rem;
-}
-
-main {
-  margin: 0 0 0 10rem ;
- 
+.error {
   display: flex;
+  flex-direction: center;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2.4rem;
-  height: 80vh;
-  width: 80vw;
 }
 
-h1 .mainText {
-  font-size: 4.8rem;
-}
-
-button {
+.moreinfo {
   border-radius: 0.5rem;
   padding: 1.2rem 3.2rem;
   width: 19.5rem;
@@ -89,8 +56,7 @@ button {
   font-size: 1.3rem;
 }
 
-
-button:hover {
+.moreinfo:hover {
   border-radius: 0.5rem;
   padding: 1.2rem 3.2rem;
   width: 19.5rem;
@@ -98,8 +64,44 @@ button:hover {
   background: #FFFFFF;
   font-family: var(--font-family);
   color: #02799D;
-  border: 2px;
 }
+
+nav {
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+  justify-self: left;
+  height: 7.2rem;
+  gap: 3.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+h1 {
+font-size: 4.8rem;
+}
+
+main {
+  margin: 0 0 0 10rem ;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  
+  height: 80vh;
+  width: 80vw;
+}
+
+h1 .mainText {
+  font-size: 4.8rem;
+}
+
+
 
 
 
